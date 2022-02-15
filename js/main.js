@@ -48,7 +48,7 @@
   }
 
   span.addEventListener('click', () =>{
-    spider.src = 'img/spider2.png';
+    spider.src = 'img/spider2.PNG';
     setTimeout(spiderUppear, 1000);
   });
 
