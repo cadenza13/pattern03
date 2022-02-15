@@ -1,0 +1,55 @@
+body{
+  background-color: black;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.container{
+  width: 350px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 40px;
+  color: red;
+  margin: 0;
+}
+
+h1.flash{
+  color: #eee;
+}
+
+h2{
+  font-size: 24px;
+  color: red;
+  margin: 8px 0;
+}
+
+p{
+  color: yellow;
+  margin: 0;
+}
+
+a{
+  display: block;
+  margin: 12px auto 18px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  line-height: 3;
+  background-color: yellow;
+  color: red;
+  border-radius: 12px;
+  box-shadow: 0 8px darkgoldenrod;
+  text-decoration: none;
+  transition: transform .8s;
+}
+
+a.scale{
+  transform: scale(1.1);
+}
+
+small{
+  /* display: block; */
+  color: yellow;
+}

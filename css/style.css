@@ -1,0 +1,288 @@
+body{
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, p{
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.under{
+  transform: rotate(90deg);
+}
+
+.logo{
+  position: fixed;
+  top: 24px;
+  bottom: auto;
+  left: 24px;
+  right: auto;
+  background-color: #fff;
+  z-index: 2;
+}
+
+span{
+  position: fixed;
+  display: block;
+  bottom: auto;
+  left: calc(50% - 96px);
+  width: 192px;
+  height: 192px;
+  margin: 0 auto;
+  z-index: 2;
+  cursor: pointer;
+  transform: translateY(-200px);
+  transition: transform 1s;
+}
+
+span img{
+  width: 100%;
+  height: 100%;
+}
+
+span.down{
+  transform: translateY(0);
+}
+
+header{
+  width: 100%;
+  margin: 0 auto;
+}
+
+header div{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+header ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  transition: transform .3s;
+}
+
+header li{
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news{
+  width: 90%;
+  margin: 36px auto;
+  background: center/cover url(../img/flame.jpg);
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.news h1{
+  text-align: center;
+}
+
+.news time{
+  display: block;
+  margin: 16px 4px 0;
+}
+
+.news a{
+  display: block;
+  margin: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+}
+
+.news a:hover{
+  text-decoration: underline;
+}
+
+main{
+  margin: 48px auto;
+}
+
+.list + .list{
+  margin-top: 16px;
+}
+
+.list .list-t{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.list-t h1{
+  background-color: #16aa2a;
+  padding-left: 36px;
+  line-height: 2;
+  width: 100%;
+  border-top: 18px solid #0b6618;
+  border-bottom: 18px solid #0b6618;
+}
+
+.list-t h1::after, .news h1::after{
+  content: attr(data-english);
+  font-size: 18px;
+}
+
+.list-t button{
+  position: absolute;
+  right: 36px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.list-b img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.list-b table, .list-b ul{
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #111
+}
+
+.list-b ul{
+  margin: 4px 0 0;
+}
+
+.list-b p{
+  margin: 0 8px;
+  padding-top: 12px;
+}
+
+.list-b h2{
+  background-color: #ee1010;
+  color: #eee;
+  font-size: 36px;
+  width: 90%;
+  line-height: 6;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.list-b .button{
+  display: block;
+  width: 200px;
+  line-height: 3;
+  margin: 12px auto;
+  text-align: center;
+  border-radius: 24px;
+  background-color: #16aa2a;
+  color: #eee;
+  text-decoration: none;
+}
+
+.list-b .rec-img{
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.list-b .face{
+  display: flex;
+  justify-content: center;
+}
+
+.list-b .telephone{
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.list-b .telephone a{
+  padding-top: 12px;
+  text-decoration: none;
+  color: #ee1010;
+}
+
+.list-b .telephone a:hover{
+  text-decoration: underline;
+}
+
+.list-b .text{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 36px;
+}
+
+.list-b label{
+  margin: 0 8px;
+}
+
+.list-b .s-button{
+  display: block;
+  width: 80px;
+  line-height: 2;
+  letter-spacing: .1em;
+  margin: auto 12px 0;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #1631aa;
+  color: #eee;
+  text-decoration: none;
+}
+
+.list-b .s-button:hover{
+  opacity: .7;
+}
+
+.push a{
+  display: block;
+  font-weight: bold;
+  font-size: 48px;
+  width: 300px;
+  line-height: 300px;
+  margin: 0 auto 64px;
+  border-radius: 50%;
+  background-color: #ee1010;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 24px #5e0707;
+  text-align: center;
+}
+
+footer{
+  background-color: #555;
+  text-align: center;
+}
+
+footer a{
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 12px;
+  padding: 0 12px;
+  border-left: 1px solid;
+  font-size: 12px;
+}
+
+footer a:last-of-type{
+  border-right: 1px solid;
+}
+
+footer small{
+  font-size: 18px;
+  line-height: 4;
+}
+
+footer a, footer small{
+  color: #eee;
+}
