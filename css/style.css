@@ -3,7 +3,7 @@ body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1, h2, p{
+h1, h2, p, ul, li{
   margin: 0;
   padding: 0;
 }
@@ -22,8 +22,27 @@ h1, h2, p{
   bottom: auto;
   left: 24px;
   right: auto;
+  width: 200px;
+  text-align: center;
   background-color: #fff;
-  z-index: 2;
+  line-height: 2;
+  z-index: 3;
+  transition: all .5s;
+}
+
+.logo.border{
+  border: 1px solid #111;
+}
+
+.logo.center{
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+  transition: all .5s;
+}
+
+.logo.center.opa{
+  opacity: 0;
 }
 
 span{
@@ -38,6 +57,22 @@ span{
   cursor: pointer;
   transform: translateY(-200px);
   transition: transform 1s;
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 2;
+  transition: all 1s;
+}
+
+.mask.opa{
+  opacity: 0;
+  pointer-events: none;
 }
 
 span img{
@@ -62,8 +97,6 @@ header div{
 
 header ul{
   display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
   height: 100%;
   transition: transform .3s;
@@ -71,8 +104,6 @@ header ul{
 
 header li{
   min-width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 header img{
@@ -153,19 +184,25 @@ main{
   object-fit: cover;
 }
 
-.list-b table, .list-b ul{
+.list-b table{
   width: 100%;
   padding-bottom: 12px;
   border-bottom: 1px dashed #111
 }
 
 .list-b ul{
-  margin: 4px 0 0;
+  width: 100%;
+  padding-bottom: 12px;
+  margin: 4px 36px 0;
 }
 
 .list-b p{
   margin: 0 8px;
   padding-top: 12px;
+}
+
+.list-b ul + p{
+  border-top: 1px dashed #111;
 }
 
 .list-b h2{
@@ -178,7 +215,7 @@ main{
   text-align: center;
 }
 
-.list-b .button{
+.list-b .button, .list-b .face a{
   display: block;
   width: 200px;
   line-height: 3;
@@ -202,20 +239,22 @@ main{
   justify-content: center;
 }
 
+.list-b .face .f-button{
+  width: 160px;
+  border-radius: 8px;
+  background-color: #1a2e86;
+}
+
+.list-b .face .i-button{
+  width: 160px;
+  border-radius: 8px;
+  background-color: #91143e;
+}
+
 .list-b .telephone{
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-}
-
-.list-b .telephone a{
-  padding-top: 12px;
-  text-decoration: none;
-  color: #ee1010;
-}
-
-.list-b .telephone a:hover{
-  text-decoration: underline;
 }
 
 .list-b .text{
