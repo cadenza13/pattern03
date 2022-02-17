@@ -191,9 +191,9 @@ main{
 }
 
 .list-b ul{
-  width: 100%;
+  width: 80%;
   padding-bottom: 12px;
-  margin: 4px 36px 0;
+  margin: 4px auto 0;
 }
 
 .list-b p{
